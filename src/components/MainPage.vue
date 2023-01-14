@@ -27,7 +27,7 @@
 import GameField from "@/components/gamefield/gamefield"
 
 
-// 1234
+// 12345
 
 
 export default {
