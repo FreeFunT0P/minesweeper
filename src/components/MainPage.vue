@@ -25,7 +25,10 @@
 <script>
 
 import GameField from "@/components/gamefield/gamefield"
-import {store} from "@/store"
+
+
+// 12345
+
 
 export default {
   name: 'MainPage',

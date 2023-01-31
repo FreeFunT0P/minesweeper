@@ -1,13 +1,12 @@
 <template>
   <div class="inner-cage" >
     <template v-if="isBombed">
-      <div class="bomb">
+      <div>
+        <img src="src/assets/bomb.png" alt="BOMB">
       </div>
     </template>
     <template v-else>
-      <template v-if="nearBombs>0">
-        {{nearBombs}}
-      </template>
+      <template v-if="nearBombs>0">{{ nearBombs }}</template>
     </template>
   </div>
 </template>
@@ -52,10 +51,5 @@ export default {
   text-align: center;
   border: 1px solid black;
   box-sizing: border-box;
-}
-.bomb {
-  height: 100%;
-  width: 100%;
-  background-color: red;
 }
 </style>
