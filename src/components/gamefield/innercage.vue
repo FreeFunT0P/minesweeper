@@ -2,7 +2,7 @@
   <div class="inner-cage" >
     <template v-if="isBombed">
       <div>
-        <img src="src/assets/bomb.png" alt="BOMB">
+        <img src="@/assets/bomb.png" alt="BOMB" class="bomb">
       </div>
     </template>
     <template v-else>
@@ -42,6 +42,7 @@ export default {
 </script>
 
 <style lang="scss">
+
 .inner-cage {
   height: 20px;
   width: 20px;
@@ -51,5 +52,10 @@ export default {
   text-align: center;
   border: 1px solid black;
   box-sizing: border-box;
+
+  .bomb {
+    height: 19px;
+    width: 19px;
+  }
 }
 </style>
